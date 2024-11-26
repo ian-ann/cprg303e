@@ -2,7 +2,101 @@
   "root": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp",
   "reactNativePath": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native",
   "reactNativeVersion": "0.75",
-  "dependencies": {},
+  "dependencies": {
+    "react-native-gesture-handler": {
+      "root": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-gesture-handler",
+      "name": "react-native-gesture-handler",
+      "platforms": {
+        "ios": {
+          "podspecPath": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-gesture-handler\\RNGestureHandler.podspec",
+          "version": "2.21.2",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-gesture-handler\\android",
+          "packageImportPath": "import com.swmansion.gesturehandler.RNGestureHandlerPackage;",
+          "packageInstance": "new RNGestureHandlerPackage()",
+          "buildTypes": [],
+          "libraryName": "rngesturehandler_codegen",
+          "componentDescriptors": [
+            "RNGestureHandlerButtonComponentDescriptor",
+            "RNGestureHandlerRootViewComponentDescriptor"
+          ],
+          "cmakeListsPath": "C:/sait/cprg303e/MyIncredibleTodoListApp/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-safe-area-context": {
+      "root": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-safe-area-context",
+      "name": "react-native-safe-area-context",
+      "platforms": {
+        "ios": {
+          "podspecPath": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
+          "version": "4.14.0",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-safe-area-context\\android",
+          "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
+          "packageInstance": "new SafeAreaContextPackage()",
+          "buildTypes": [],
+          "libraryName": "safeareacontext",
+          "componentDescriptors": [
+            "RNCSafeAreaProviderComponentDescriptor",
+            "RNCSafeAreaViewComponentDescriptor"
+          ],
+          "cmakeListsPath": "C:/sait/cprg303e/MyIncredibleTodoListApp/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-screens": {
+      "root": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-screens",
+      "name": "react-native-screens",
+      "platforms": {
+        "ios": {
+          "podspecPath": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-screens\\RNScreens.podspec",
+          "version": "4.3.0",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "C:\\sait\\cprg303e\\MyIncredibleTodoListApp\\node_modules\\react-native-screens\\android",
+          "packageImportPath": "import com.swmansion.rnscreens.RNScreensPackage;",
+          "packageInstance": "new RNScreensPackage()",
+          "buildTypes": [],
+          "libraryName": "rnscreens",
+          "componentDescriptors": [
+            "RNSFullWindowOverlayComponentDescriptor",
+            "RNSScreenContainerComponentDescriptor",
+            "RNSScreenNavigationContainerComponentDescriptor",
+            "RNSScreenStackHeaderConfigComponentDescriptor",
+            "RNSScreenStackHeaderSubviewComponentDescriptor",
+            "RNSScreenStackComponentDescriptor",
+            "RNSSearchBarComponentDescriptor",
+            "RNSScreenComponentDescriptor",
+            "RNSScreenFooterComponentDescriptor",
+            "RNSScreenContentWrapperComponentDescriptor",
+            "RNSModalScreenComponentDescriptor"
+          ],
+          "cmakeListsPath": "C:/sait/cprg303e/MyIncredibleTodoListApp/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    }
+  },
   "commands": [
     {
       "name": "bundle",
