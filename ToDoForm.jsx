@@ -1,22 +1,36 @@
-import React from 'react';
-import {
-  StyleSheet,
-  TextInput,
-  Button,
-  View,
-} from 'react-native';
+import React, { useState } from 'react';
+import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
 
-const ToDoForm = () => {
+const ToDoForm = ({ addTask }) => {
+  const [taskText, setTaskText] = useState('');
+  const [error, setError] = useState('');
+
+  const handleAddTask = () => {
+    if (taskText.trim() === '') {
+      setError('Task cannot be empty');
+    } else {
+      addTask(taskText);
+      setTaskText('');
+      setError('');
+    }
+  };
+
   return (
-    <View style={styles.form}>
-      <TextInput
-        style={styles.input}
-        placeholder="Add a new task..."
-      />
-      <Button title="Add" />
+    <View style={styles.container}>
+      <View style={styles.form}>
+        <TextInput
+          style={styles.input}
+          placeholder="Add a new task..."
+          onChangeText={(text) => setTaskText(text)}
+          value={taskText}
+        />
+        <Button title="Add Task" onPress={handleAddTask} />
+      </View>
+      {error ? <Text style={styles.error}>{error}</Text> : null}
     </View>
   );
 };
+
 
 const styles = StyleSheet.create({
   task: {
@@ -44,6 +58,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     marginRight: 10,
+  },
+  error: {
+    paddingVertical: 5,
+    color: 'red',
+    marginHorizontal: 20,
   },
 });
 
